@@ -21,6 +21,9 @@
 
 หมายเหตุ: แก้ไขชื่อและรหัสนักศึกษาใน \`README.md\` และ \`index.html\` ให้ตรงกับข้อมูลจริงก่อนส่งงาน
 ---
+Cloudflare Pages:
+https://student-resume-1ch.pages.dev/
+---
 
 ทักษะ
 
