@@ -30,6 +30,12 @@
   // Print
   printBtn && printBtn.addEventListener('click', ()=> window.print());
 
+  // Reveal animations on load
+  document.addEventListener('DOMContentLoaded', ()=>{
+    const els = document.querySelectorAll('.reveal');
+    els.forEach((el, i)=> setTimeout(()=> el.classList.add('show'), 80 * i));
+  });
+
   // expose for debug
   window.showMessage = showMessage;
 })();
