@@ -9,8 +9,24 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Validate HTML
-        uses: davidanson/html-validator-action@v1
+      - name: Debug: show runner info
+        run: |
+          echo "Runner: $(uname -a)"
+          echo "Working dir: $(pwd)"
+          echo "Files:" && ls -la
+      - name: Debug: check index.html exists
+        run: |
+          if [ -f index.html ]; then echo "index.html found"; else echo "index.html NOT found"; fi
+      - name: Debug: Node / npx info
+        run: |
+          node -v || echo "node not installed"
+          npx --version || echo "npx not available"
+      - name: Validate HTML (html-validate)
+        run: |
+          # use html-validate to lint all .html files in the repo
+          # install & run via npx (no package.json required)
+          npx --yes html-validate --version
+          npx --yes html-validate --extension html .
       - name: Deploy to Cloudflare Pages
         uses: cloudflare/pages-action@v1
         with:
