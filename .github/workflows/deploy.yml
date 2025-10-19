@@ -12,9 +12,10 @@ jobs:
 
       - name: Validate HTML (html-validate)
         run: |
-          # lint all .html files using html-validate via npx
+          # lint all .html files using html-validate via npx (use glob)
           npx --yes html-validate --version
-          npx --yes html-validate --extension html .
+          # prefer glob to target only HTML files
+          npx --yes html-validate "**/*.html"
 
       - name: Deploy to Cloudflare Pages
         uses: cloudflare/pages-action@v1
