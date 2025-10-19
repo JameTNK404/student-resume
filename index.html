@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Resume - ทินกฤต จันทร์เกตุ</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div class="page">
+		<header class="topbar">
+			<div class="topbar-inner">
+				<div class="title">
+					<h1>ทินกฤต จันทร์เกตุ</h1>
+					<p class="position">ตำแหน่งที่สนใจ: Full Stack Developer</p>
+				</div>
+				<div class="controls">
+					<button id="print-btn" aria-label="Print">🖨️</button>
+				</div>
+			</div>
+		</header>
+
+		<main class="container">
+			<aside class="profile">
+				<div class="avatar" aria-hidden="true">TN</div>
+				<h2 class="name">ทินกฤต จันทร์เกตุ</h2>
+				<p class="role">Full Stack Developer</p>
+
+				<div class="contact">
+					<button class="link" id="copy-email" data-value="student@email.com">📧 student@email.com</button>
+					<div class="muted">📞 099-999-9999</div>
+					<div class="muted">📍 กรุงเทพมหานคร</div>
+				</div>
+
+				<section class="education">
+					<h3>การศึกษา</h3>
+					<p>ปวส. เทคโนโลยีสารสนเทศ - วิทยาลัยเทคโนโลยีอรรถวิทย์พณิชยการ</p>
+				</section>
+			</aside>
+
+			<section class="content">
+				<section id="skills" class="card">
+					<h3>ทักษะ</h3>
+					<div class="skills-grid">
+						<div>
+							<h4>ทักษะด้านเทคนิค (Hard Skills)</h4>
+							<ul>
+								<li><strong>Backend:</strong> Node.js (NestJS), PHP (Laravel, CodeIgniter), Java (พื้นฐาน)</li>
+								<li><strong>Front-end:</strong> HTML, CSS, TypeScript/JavaScript, Next.js (พื้นฐาน)</li>
+								<li><strong>Database:</strong> PostgreSQL, MySQL, MS SQL, PrismaORM / TypeORM, Redis (พื้นฐาน)</li>
+								<li><strong>API:</strong> Kong, Apache APISIX, RabbitMQ (พื้นฐาน)</li>
+								<li><strong>DevOps:</strong> Docker, Docker Compose, Git, Git Flow, GitHub Actions, Linux, Jenkins
+									(พื้นฐาน)</li>
+							</ul>
+						</div>
+						<div>
+							<h4>ทักษะด้านสังคม (Soft Skills)</h4>
+							<ul>
+								<li>การแก้ปัญหา (Problem Solving)</li>
+								<li>การบริหารเวลา (Time Management)</li>
+								<li>การคิดวิเคราะห์ (Analytical Thinking)</li>
+								<li>การปรับตัว (Adaptability)</li>
+								<li>การสื่อสาร (Communication)</li>
+								<li>ความคิดสร้างสรรค์ (Creative Thinking)</li>
+								<li>การทำงานเป็นทีม (Teamwork)</li>
+								<li>การคิดเชิงวิพากษ์ (Critical Thinking)</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+
+				<section id="projects" class="card">
+					<h3>ผลงาน</h3>
+					<p>เว็บไซต์แนะนำสินค้า - พัฒนาโดยใช้ HTML/CSS/JS</p>
+				</section>
+
+				<section id="about" class="card">
+					<h3>เกี่ยวกับ</h3>
+					<p>โปรเจคตัวอย่างเรซูเม่และสรุปโครงการ "ระบบจัดการคลังสินค้าสำหรับธุรกิจ SME" สามารถดูรายละเอียดเพิ่มเติมได้ใน
+						README ของรีโพซิทอรี</p>
+				</section>
+
+				<div class="actions">
+					<button id="show-btn" class="primary">คลิกดูข้อความ</button>
+				</div>
+			</section>
+		</main>
+
+		<div id="toast" class="toast" role="status" aria-live="polite"></div>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+
+</html>
